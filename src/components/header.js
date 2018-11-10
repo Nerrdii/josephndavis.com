@@ -1,33 +1,45 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
+const Header = () => (
+  <nav
+    className="navbar has-background-dark"
+    role="navigation"
+    aria-label="main navigation"
   >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+    <div className="navbar-brand">
+      <Link to="/" className="navbar-item has-text-light is-size-3">
+        Joseph Davis
+      </Link>
 
-export default Header
+      <label
+        htmlFor="navbar-toggle-state"
+        className="navbar-burger burger has-text-light"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+      >
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+        <span aria-hidden="true" />
+      </label>
+    </div>
+
+    <input type="checkbox" id="navbar-toggle-state" />
+
+    <div id="navbarBasicExample" className="navbar-menu has-background-dark">
+      <div className="navbar-end">
+        <div className="navbar-item">
+          <Link to="/about" className="navbar-item has-text-light">
+            About
+          </Link>
+          <Link to="/portfolio" className="navbar-item has-text-light">
+            Portfolio
+          </Link>
+        </div>
+      </div>
+    </div>
+  </nav>
+);
+
+export default Header;

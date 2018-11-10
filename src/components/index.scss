@@ -1,1 +1,13 @@
+#navbar-toggle-state {
+  display: none;
+}
+
+#navbar-toggle-state:checked ~ .navbar-menu {
+  display: block;
+}
+
+a.navbar-item.has-text-light:hover {
+  background: none;
+}
+
 @import '~bulma/bulma.sass';

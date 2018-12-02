@@ -30,9 +30,13 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header />
-        <div className="container">{children}</div>
-        <Footer />
+        <div className="wrapper">
+          <Header />
+          <main>
+            <div className="container">{children}</div>
+          </main>
+          <Footer />
+        </div>
       </>
     )}
   />

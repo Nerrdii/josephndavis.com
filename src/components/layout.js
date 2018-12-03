@@ -25,8 +25,11 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'keywords', content: 'sample, something' }
           ]}
+          bodyAttributes={{
+            id: 'bg-img'
+          }}
         >
           <html lang="en" />
         </Helmet>
@@ -43,7 +46,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;

@@ -13,7 +13,6 @@ body {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 .wrapper {
@@ -50,6 +49,33 @@ header {
 
 main {
   grid-area: main;
+
+  .landing {
+    display: grid;
+    grid-template-areas: 'text photo';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    min-height: 100%;
+
+    .landing-photo {
+      grid-area: photo;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .landing-text {
+      grid-area: text;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 footer {

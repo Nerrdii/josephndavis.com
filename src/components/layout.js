@@ -27,17 +27,12 @@ const Layout = ({ children }) => (
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' }
           ]}
-          bodyAttributes={{
-            id: 'bg-img'
-          }}
         >
           <html lang="en" />
         </Helmet>
         <div className="wrapper">
           <Header />
-          <main>
-            <div className="container">{children}</div>
-          </main>
+          <main>{children}</main>
           <Footer />
         </div>
       </>

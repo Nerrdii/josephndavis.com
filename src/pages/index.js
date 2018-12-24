@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
+import socialLinks from '../config/social';
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -14,8 +15,23 @@ const IndexPage = ({ data }) => (
         <h1 className="is-size-1 has-text-warning">Joseph Davis</h1>
         <h2 className="is-size-4">Software Engineer</h2>
         <div className="icons">
-          <i class="fab fa-github-square fa-2x" />
-          <i class="fab fa-linkedin fa-2x" />
+          <a
+            href={socialLinks.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github-square fa-2x" />
+          </a>
+          <a
+            href={socialLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin fa-2x" />
+          </a>
+          <a href={socialLinks.email}>
+            <i class="fas fa-envelope-square fa-2x" />
+          </a>
         </div>
       </div>
     </div>

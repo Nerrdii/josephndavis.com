@@ -11,8 +11,12 @@ const IndexPage = ({ data }) => (
         <Img fixed={data.file.childImageSharp.fixed} />
       </div>
       <div className="landing-text">
-        <h1>Joseph Davis</h1>
-        <h2>Software Engineer</h2>
+        <h1 className="is-size-1 has-text-warning">Joseph Davis</h1>
+        <h2 className="is-size-4">Software Engineer</h2>
+        <div className="icons">
+          <i class="fab fa-github-square fa-2x" />
+          <i class="fab fa-linkedin fa-2x" />
+        </div>
       </div>
     </div>
   </Layout>

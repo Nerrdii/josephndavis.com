@@ -1,7 +1,12 @@
-$dark: #444;
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+$dark: rgb(39, 38, 38);
+$warning: rgb(167, 154, 41);
 
 * {
   box-sizing: border-box;
+  font-family: 'Noto Serif SC', serif;
 }
 
 html,
@@ -55,12 +60,13 @@ main {
     grid-template-areas: 'text photo';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 4rem;
     min-height: 100%;
 
     .landing-photo {
       grid-area: photo;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
 
       img {
@@ -72,8 +78,16 @@ main {
       grid-area: text;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
+
+      .icons {
+        margin-top: 0.5rem;
+
+        i {
+          padding: 0.3rem;
+        }
+      }
     }
   }
 }

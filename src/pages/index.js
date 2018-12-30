@@ -20,17 +20,17 @@ const IndexPage = ({ data }) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github-square fa-2x" />
+            <i className="fab fa-github-square fa-2x" />
           </a>
           <a
             href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-linkedin fa-2x" />
+            <i className="fab fa-linkedin fa-2x" />
           </a>
           <a href={socialLinks.email}>
-            <i class="fas fa-envelope-square fa-2x" />
+            <i className="fas fa-envelope-square fa-2x" />
           </a>
         </div>
       </div>

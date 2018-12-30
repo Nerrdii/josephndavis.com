@@ -6,7 +6,7 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "logo_transparent.png" }) {
+        file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
             fixed(width: 60, height: 60) {
               ...GatsbyImageSharpFixed

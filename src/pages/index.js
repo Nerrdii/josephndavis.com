@@ -7,12 +7,12 @@ import socialLinks from '../config/social';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <div className="landing has-text-light">
+    <div className="section landing has-text-light">
       <div className="landing-photo">
         <Img fixed={data.file.childImageSharp.fixed} />
       </div>
       <div className="landing-text">
-        <h1 className="is-size-1 has-text-warning">Joseph Davis</h1>
+        <h1 className="is-size-1 has-text-primary">Joseph Davis</h1>
         <h2 className="is-size-4">Software Engineer</h2>
         <div className="icons">
           <a

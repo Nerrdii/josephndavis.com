@@ -17,11 +17,7 @@ const Header = () => (
     `}
     render={data => (
       <header>
-        <nav
-          className="navbar has-background-dark"
-          role="navigation"
-          aria-label="main navigation"
-        >
+        <nav className="navbar" role="navigation" aria-label="main navigation">
           <div className="navbar-brand">
             <Link to="/">
               <Img fixed={data.file.childImageSharp.fixed} />
@@ -42,7 +38,7 @@ const Header = () => (
 
           <input type="checkbox" id="navbar-toggle-state" />
 
-          <div id="mainNavbar" className="navbar-menu has-background-dark">
+          <div id="mainNavbar" className="navbar-menu">
             <div className="navbar-end">
               <div className="navbar-item">
                 <Link to="/" className="navbar-item has-text-light">

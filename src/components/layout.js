@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div className="wrapper">
+        <div className="wrapper has-background-dark">
           <Header />
           <main>{children}</main>
           <Footer />

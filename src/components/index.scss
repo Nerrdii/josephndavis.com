@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC');
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
-$dark: rgb(39, 38, 38);
-$warning: rgb(167, 154, 41);
+$dark-blue: #1b2d56;
+$dark: #09183a;
+$primary: #b58135;
 
 * {
   box-sizing: border-box;
@@ -29,11 +30,15 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background: lighten($dark, 5%);
 }
 
 header {
   grid-area: header;
+
+  .navbar,
+  .navbar-menu {
+    background-color: #1b2d56;
+  }
 
   .navbar-brand a {
     margin-left: 0.5rem;

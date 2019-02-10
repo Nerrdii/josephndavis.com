@@ -9,11 +9,11 @@ const AboutPage = () => (
         <div className="tile is-4 is-vertical is-parent">
           <div className="tile is-child">
             <div className="card">
-              <div className="card-header">
+              <header className="card-header">
                 <p className="card-header-title is-size-4 has-text-primary">
                   Company
                 </p>
-              </div>
+              </header>
               <div className="card-content">
                 <div className="content">DST Systems</div>
               </div>
@@ -21,11 +21,11 @@ const AboutPage = () => (
           </div>
           <div className="tile is-child">
             <div className="card">
-              <div className="card-header">
+              <header className="card-header">
                 <p className="card-header-title is-size-4 has-text-primary">
                   School
                 </p>
-              </div>
+              </header>
               <div className="card-content">
                 <div className="content">
                   <p>University of Central Missouri</p>
@@ -39,11 +39,11 @@ const AboutPage = () => (
         <div className="tile is-4 is-parent">
           <div className="tile is-child">
             <div className="card">
-              <div className="card-header">
+              <header className="card-header">
                 <p className="card-header-title is-size-4 has-text-primary">
                   Favorite Technologies
                 </p>
-              </div>
+              </header>
               <div className="card-content">
                 <div className="content">
                   <p>Java</p>
@@ -58,11 +58,11 @@ const AboutPage = () => (
         <div className="tile is-4 is-vertical is-parent">
           <div className="tile is-child">
             <div className="card">
-              <div className="card-header">
+              <header className="card-header">
                 <p className="card-header-title is-size-4 has-text-primary">
                   Favorite Editor
                 </p>
-              </div>
+              </header>
               <div className="card-content">
                 <div className="content">VS Code</div>
               </div>
@@ -70,11 +70,11 @@ const AboutPage = () => (
           </div>
           <div className="tile is-child">
             <div className="card">
-              <div className="card-header">
+              <header className="card-header">
                 <p className="card-header-title is-size-4 has-text-primary">
                   Other Interests
                 </p>
-              </div>
+              </header>
               <div className="card-content">
                 <div className="content">
                   <p>Running</p>

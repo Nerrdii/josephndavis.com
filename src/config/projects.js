@@ -7,6 +7,13 @@ const projects = [
     tech: 'node, express, mongo, react, redux'
   },
   {
+    name: 'Movie Search',
+    desc: 'Easily search and view details for your favorite movies',
+    repo: 'https://github.com/MrWhiteNerdy/movie-search',
+    link: 'https://ecstatic-kowalevski-f18263.netlify.com',
+    tech: 'angular'
+  },
+  {
     id: 'weather-app',
     name: 'Weather App',
     desc: "Displays the current weather forecast in the user's location.",
@@ -37,7 +44,7 @@ const projects = [
       'A Java network-based chat application with GUI and database connectivity.',
     repo: 'https://github.com/MrWhiteNerdy/chatterbox.git',
     link: null,
-    tech: 'java'
+    tech: 'java, javafx, mysql'
   },
   {
     id: 'wikipedia-viewer',

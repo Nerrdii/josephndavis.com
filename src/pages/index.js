@@ -1,16 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import socialLinks from '../config/social';
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <div className="section landing has-text-light">
-      <div className="landing-photo">
-        <Img fixed={data.file.childImageSharp.fixed} />
-      </div>
       <div className="landing-text">
         <h1 className="is-size-1 has-text-primary">Joseph Davis</h1>
         <h2 className="is-size-4">Software Engineer</h2>
@@ -39,15 +34,3 @@ const IndexPage = ({ data }) => (
 );
 
 export default IndexPage;
-
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "profile.jpg" }) {
-      childImageSharp {
-        fixed(width: 250, height: 250) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;

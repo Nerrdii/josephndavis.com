@@ -1,44 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Header from './header';
-import Footer from './footer';
+import Header from './Header';
+import Footer from './Footer';
 
 import './index.scss';
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' }
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <div className="wrapper has-background-dark">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </>
-    )}
-  />
-);
+    }
+  `);
+
+  return (
+    <>
+      <Helmet
+        title={data.site.siteMetadata.title}
+        meta={[
+          { name: 'description', content: 'Sample' },
+          { name: 'keywords', content: 'sample, something' }
+        ]}
+      >
+        <html lang="en" />
+      </Helmet>
+      <div className="wrapper has-background-dark">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired

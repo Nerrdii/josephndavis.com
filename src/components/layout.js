@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from './header';
+import Footer from './footer';
 
 import '../styles/index.scss';
 
@@ -26,8 +26,7 @@ const Layout = ({ children }) => {
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' }
-        ]}
-      >
+        ]}>
         <html lang="en" />
       </Helmet>
       <div className="wrapper has-background-dark">

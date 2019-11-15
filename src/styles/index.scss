@@ -63,28 +63,13 @@ header {
 main {
   grid-area: main;
 
-  .landing {
-    display: grid;
-    grid-template-areas: 'text';
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    min-height: 100%;
+  .icons {
+    display: flex;
+    justify-content: center;
 
-    .landing-text {
-      grid-area: text;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      .icons {
-        margin-top: 0.5rem;
-
-        i {
-          padding: 0.3rem;
-          color: white;
-        }
-      }
+    i {
+      padding: 0.3rem;
+      color: white;
     }
   }
 }

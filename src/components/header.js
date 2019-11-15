@@ -28,8 +28,7 @@ const Header = () => {
             className="navbar-burger burger has-text-light"
             aria-label="menu"
             aria-expanded="false"
-            data-target="mainNavbar"
-          >
+            data-target="mainNavbar">
             <span aria-hidden="true" />
             <span aria-hidden="true" />
             <span aria-hidden="true" />
@@ -43,9 +42,6 @@ const Header = () => {
             <div className="navbar-item">
               <Link to="/" className="navbar-item has-text-light">
                 Home
-              </Link>
-              <Link to="/about" className="navbar-item has-text-light">
-                About
               </Link>
               <Link to="/portfolio" className="navbar-item has-text-light">
                 Portfolio

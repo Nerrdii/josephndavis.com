@@ -3,7 +3,7 @@ const projects = [
     name: 'Recipe Box',
     desc: 'CRUD application to easily view & manage your favorite recipes',
     repo: 'https://github.com/MrWhiteNerdy/recipe-box',
-    link: 'https://infinite-earth-59944.herokuapp.com',
+    link: 'https://mwn-recipe-box.herokuapp.com/',
     tech: 'node, express, mongo, react, redux'
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     name: 'Timestamp Microservice',
     desc: 'Converts between Unix and natural language timestamps.',
     repo: 'https://github.com/MrWhiteNerdy/timestamp-microservice.git',
-    link: 'https://obscure-ravine-25083.herokuapp.com',
+    link: 'https://mwn-timestamp-microservice.herokuapp.com/',
     tech: 'node'
   }
 ];

@@ -21,15 +21,14 @@ const PortfolioPage = () => (
           ) : null;
 
           return (
-            <div key={index} className="column is-one-third">
+            <div
+              key={index}
+              className="column is-half-tablet is-one-third-desktop"
+            >
               <div className="card">
-                <header className="card-header">
-                  <div className="card-header-title is-size-4">
-                    {project.name}
-                  </div>
-                </header>
                 <div className="card-content">
                   <div className="content">
+                    <h1 className="is-size-4">{project.name}</h1>
                     <p>{project.desc}</p>
                     <p>Tech: {project.tech}</p>
                   </div>
@@ -49,60 +48,6 @@ const PortfolioPage = () => (
             </div>
           );
         })}
-        {/* <div className="column">
-          <div className="card">
-            <header className="card-header">
-              <div className="card-header-title">Weather App</div>
-            </header>
-            <div className="card-content">
-              <div className="content">Shows weather for current location</div>
-            </div>
-            <footer className="card-footer">
-              <a href="#" className="card-footer-item">
-                Visit
-              </a>
-              <a href="#" className="card-footer-item">
-                GitHub
-              </a>
-            </footer>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <header className="card-header">
-              <div className="card-header-title">Weather App</div>
-            </header>
-            <div className="card-content">
-              <div className="content">Shows weather for current location</div>
-            </div>
-            <footer className="card-footer">
-              <a href="#" className="card-footer-item">
-                Visit
-              </a>
-              <a href="#" className="card-footer-item">
-                GitHub
-              </a>
-            </footer>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <header className="card-header">
-              <div className="card-header-title">Weather App</div>
-            </header>
-            <div className="card-content">
-              <div className="content">Shows weather for current location</div>
-            </div>
-            <footer className="card-footer">
-              <a href="#" className="card-footer-item">
-                Visit
-              </a>
-              <a href="#" className="card-footer-item">
-                GitHub
-              </a>
-            </footer>
-          </div>
-        </div> */}
       </div>
     </section>
   </Layout>

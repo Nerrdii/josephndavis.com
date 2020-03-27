@@ -26,7 +26,8 @@ const Layout = ({ children }) => {
         meta={[
           { name: 'description', content: 'Sample' },
           { name: 'keywords', content: 'sample, something' }
-        ]}>
+        ]}
+      >
         <html lang="en" />
       </Helmet>
       <div className="wrapper has-background-dark">

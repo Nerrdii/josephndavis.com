@@ -62,15 +62,14 @@ header {
 
 main {
   grid-area: main;
+}
 
-  .icons {
-    display: flex;
-    justify-content: center;
+.icons {
+  margin-left: 1rem;
 
-    i {
-      padding: 0.3rem;
-      color: white;
-    }
+  i {
+    padding: 0.3rem;
+    color: white;
   }
 }
 

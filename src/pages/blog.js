@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const BlogPage = ({ data }) => {
@@ -19,12 +19,10 @@ const BlogPage = ({ data }) => {
               <div key={post.id} className="column is-6">
                 <div className="card">
                   <div className="card-content">
-                    <p className="title is-4" style={{ marginBottom: '2rem' }}>
+                    <Link to={post.fields.slug} className="title is-4">
                       {post.frontmatter.title}
-                    </p>
-                    <p className="subtitle is-6">
-                      {post.frontmatter.description}
-                    </p>
+                    </Link>
+                    <p className="is-6">{post.frontmatter.description}</p>
                   </div>
                 </div>
               </div>
@@ -40,11 +38,15 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
+          id
+          fields {
+            slug
+          }
           frontmatter {
             title
+            date(formatString: "MMMM Do, YYYY")
             description
           }
-          id
         }
       }
     }

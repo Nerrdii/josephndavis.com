@@ -5,6 +5,13 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: `${__dirname}/src/blog`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -12,6 +19,7 @@ module.exports = {
       }
     },
     'gatsby-transformer-sharp',
+    'gatsby-transformer-remark',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -31,6 +39,7 @@ module.exports = {
       options: {
         trackingId: 'UA-123557323-2'
       }
-    }
+    },
+    'gatsby-plugin-netlify-cms'
   ]
 };

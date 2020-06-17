@@ -40,14 +40,15 @@ const Header = () => {
 
         <div id="mainNavbar" className="navbar-menu">
           <div className="navbar-end">
-            <div className="navbar-item">
-              <Link to="/" className="navbar-item has-text-light">
-                Home
-              </Link>
-              <Link to="/portfolio" className="navbar-item has-text-light">
-                Portfolio
-              </Link>
-            </div>
+            <Link to="/" className="navbar-item has-text-light">
+              Home
+            </Link>
+            <Link to="/portfolio" className="navbar-item has-text-light">
+              Portfolio
+            </Link>
+            <Link to="/blog" className="navbar-item has-text-light">
+              Blog
+            </Link>
           </div>
         </div>
       </nav>

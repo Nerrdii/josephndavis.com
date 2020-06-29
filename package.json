@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "description": "Personal portfolio",
+  "name": "josephndavis.com",
+  "description": "My personal website + blog",
   "version": "1.0.0",
   "author": "Joseph Davis",
   "dependencies": {
@@ -39,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrWhiteNerdy/portfolio"
+    "url": "https://github.com/MrWhiteNerdy/josephndavis.com"
   }
 }

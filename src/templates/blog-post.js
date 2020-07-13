@@ -11,9 +11,13 @@ export const BlogPostTemplate = ({ content, description, title, helmet }) => {
       <div className="container content">
         <div className="columns is-centered">
           <div className="column is-two-thirds">
-            <h1 className="title is-size-2 has-text-light">{title}</h1>
-            <p className="is-size-5">{description}</p>
-            <div dangerouslySetInnerHTML={{ __html: content }}></div>
+            <div className="card py-6">
+              <div className="card-content mx-6">
+                <p className="title has-text-centered">{title}</p>
+                <p className="subtitle has-text-centered">{description}</p>
+                <div dangerouslySetInnerHTML={{ __html: content }}></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

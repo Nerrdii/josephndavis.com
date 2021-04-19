@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 public_folder: assets
+
+site_url: https://www.josephndavis.com
 
 collections:
   - name: blog

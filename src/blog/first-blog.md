@@ -19,4 +19,4 @@ Wow!
 
 A picture:
 
-![](assets/p6g5h5shjpw41.jpg "Cool pic")
+![](/assets/screenshot-10-.png)

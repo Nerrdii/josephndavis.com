@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fixed(width: 60, height: 60) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, width: 60)
         }
       }
     }
@@ -20,7 +18,7 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/">
-            <Img fixed={data.file.childImageSharp.fixed} />
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
           </Link>
 
           <label

@@ -2,9 +2,6 @@ module.exports = {
   siteMetadata: {
     title: 'Joseph Davis | Portfolio'
   },
-  flags: {
-    PRESERVE_WEBPACK_CACHE: true
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {

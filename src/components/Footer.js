@@ -22,7 +22,7 @@ const Footer = () => (
         >
           <i className="fab fa-linkedin fa-2x" />
         </a>
-        <a href={socialLinks.email}>
+        <a href={`mailto:${socialLinks.email}`}>
           <i className="fas fa-envelope-square fa-2x" />
         </a>
       </div>

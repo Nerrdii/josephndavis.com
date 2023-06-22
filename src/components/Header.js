@@ -18,7 +18,10 @@ const Header = () => {
       <nav className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <Link to="/">
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} />
+            <GatsbyImage
+              image={data.file.childImageSharp.gatsbyImageData}
+              alt="logo"
+            />
           </Link>
 
           <label

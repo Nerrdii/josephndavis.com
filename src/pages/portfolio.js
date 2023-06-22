@@ -54,3 +54,5 @@ const PortfolioPage = () => (
 );
 
 export default PortfolioPage;
+
+export { Head } from '../components/Head';

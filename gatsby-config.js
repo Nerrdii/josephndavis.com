@@ -3,7 +3,6 @@ module.exports = {
     title: 'Joseph Davis | Portfolio'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -20,6 +19,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-transformer-remark',
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
